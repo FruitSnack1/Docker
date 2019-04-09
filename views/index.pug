@@ -1,0 +1,25 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Docker project
+    style.
+      input{
+        display:block;
+      }
+  body
+    h1 Poopeek 
+    form(action="/item/add" method="post")
+      label Jméno
+      input(type='text', name='firstname')
+      label Příjmení
+      input(type='text', name='lastname')
+      label Email
+      input(type='text', name='email')
+      input(type='submit')
+    h3 Uživatelé
+    ul
+    each user, i in users
+      li #{user.firstname}, #{user.lastname}, #{user.email} 
+        
+     
