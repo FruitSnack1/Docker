@@ -59,7 +59,7 @@ Přidat tag na image
 docker tag [id] [username]/[name]:[tag]
 ```
 
-Přidat na DockerHub
+Přidat image na DockerHub
 ```
 docker push [username]/[name]
 ```
