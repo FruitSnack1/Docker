@@ -54,6 +54,16 @@ Spuštení bash v kontejneru
 docker exec -i -t [container_name] /bin/bash
 ```
 
+Přidat tag na image
+```
+docker tag [id] [username]/[name]:[tag]
+```
+
+Přidat na DockerHub
+```
+docker push [username]/[name]
+```
+
 Odstranění všech kontejnerů
 ```
 docker rm -f $(docker ps -a -q)
